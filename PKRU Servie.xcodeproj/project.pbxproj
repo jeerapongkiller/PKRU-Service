@@ -28,6 +28,8 @@
 		99173B561F2B1AB600B753AD /* ic_save_white_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 99173B531F2B1AB600B753AD /* ic_save_white_2x.png */; };
 		99173B571F2B1AB600B753AD /* ic_save_white_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 99173B541F2B1AB600B753AD /* ic_save_white_3x.png */; };
 		99173B581F2B1AB600B753AD /* ic_save_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 99173B551F2B1AB600B753AD /* ic_save_white.png */; };
+		99173B5C1F2B31AB00B753AD /* WebViewContent.html in Resources */ = {isa = PBXBuildFile; fileRef = 99173B5B1F2B31AB00B753AD /* WebViewContent.html */; };
+		99173B601F2B37CE00B753AD /* gifController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99173B5F1F2B37CE00B753AD /* gifController.swift */; };
 		996B3D721F2AE11C00A670ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996B3D711F2AE11C00A670ED /* AppDelegate.swift */; };
 		996B3D741F2AE11C00A670ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996B3D731F2AE11C00A670ED /* ViewController.swift */; };
 		996B3D771F2AE11C00A670ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 996B3D751F2AE11C00A670ED /* Main.storyboard */; };
@@ -58,6 +60,8 @@
 		99173B531F2B1AB600B753AD /* ic_save_white_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_save_white_2x.png; sourceTree = "<group>"; };
 		99173B541F2B1AB600B753AD /* ic_save_white_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_save_white_3x.png; sourceTree = "<group>"; };
 		99173B551F2B1AB600B753AD /* ic_save_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_save_white.png; sourceTree = "<group>"; };
+		99173B5B1F2B31AB00B753AD /* WebViewContent.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = WebViewContent.html; sourceTree = "<group>"; };
+		99173B5F1F2B37CE00B753AD /* gifController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gifController.swift; sourceTree = "<group>"; };
 		996B3D6E1F2AE11C00A670ED /* PKRU Servie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PKRU Servie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		996B3D711F2AE11C00A670ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		996B3D731F2AE11C00A670ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,7 +86,9 @@
 		996B3D651F2AE11C00A670ED = {
 			isa = PBXGroup;
 			children = (
+				99173B5F1F2B37CE00B753AD /* gifController.swift */,
 				996B3D991F2AF57600A670ED /* SingUpViewController.swift */,
+				99173B5B1F2B31AB00B753AD /* WebViewContent.html */,
 				996B3D701F2AE11C00A670ED /* PKRU Servie */,
 				996B3D6F1F2AE11C00A670ED /* Products */,
 			);
@@ -194,6 +200,7 @@
 				99173B4B1F2B1A7E00B753AD /* ic_lock_outline_white_3x.png in Resources */,
 				99173B501F2B1A9C00B753AD /* ic_supervisor_account_white_2x.png in Resources */,
 				99173B521F2B1A9C00B753AD /* ic_supervisor_account_white.png in Resources */,
+				99173B5C1F2B31AB00B753AD /* WebViewContent.html in Resources */,
 				99173B3F1F2B1A5200B753AD /* ic_group_add_3x.png in Resources */,
 				99173B4C1F2B1A7E00B753AD /* ic_lock_outline_white.png in Resources */,
 				99173B391F2B1A3300B753AD /* ic_exit_to_app_3x.png in Resources */,
@@ -223,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99173B601F2B37CE00B753AD /* gifController.swift in Sources */,
 				996B3D741F2AE11C00A670ED /* ViewController.swift in Sources */,
 				996B3D9A1F2AF57600A670ED /* SingUpViewController.swift in Sources */,
 				996B3D721F2AE11C00A670ED /* AppDelegate.swift in Sources */,
