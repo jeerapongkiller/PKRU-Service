@@ -68,7 +68,11 @@
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="t2g-LP-KVm"/>
-                                    <barButtonItem image="ic_exit_to_app_2x.png" id="LwZ-Bk-EeI"/>
+                                    <barButtonItem image="ic_exit_to_app_2x.png" id="LwZ-Bk-EeI">
+                                        <connections>
+                                            <action selector="loginButton:" destination="BYZ-38-t0r" id="kgz-UO-vvi"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Che-8v-g7c"/>
                                 </items>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -86,9 +90,17 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.59999999999999998" contentMode="center" image="ic_lock_outline_white.png" translatesAutoresizingMaskIntoConstraints="NO" id="llv-0K-Ot1">
                                 <rect key="frame" x="85" y="404" width="24" height="24"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R2p-uY-zsP">
+                                <rect key="frame" x="16" y="458" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="R2p-uY-zsP" secondAttribute="trailing" id="0S6-9w-Cjb"/>
+                            <constraint firstItem="R2p-uY-zsP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="157-6x-6lX"/>
                             <constraint firstItem="Y6g-7C-Q3e" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="4vu-6e-nyM"/>
                             <constraint firstItem="llv-0K-Ot1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="69" id="5nY-lH-iMD"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Jvh-F1-7D3" secondAttribute="bottom" id="AOh-HY-Z54"/>
@@ -100,7 +112,9 @@
                             <constraint firstItem="Jvh-F1-7D3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="RYW-Vl-jee"/>
                             <constraint firstItem="t2w-fD-Ka6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TKZ-gz-oer"/>
                             <constraint firstItem="OtE-dl-6VA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TWa-R2-lO5"/>
+                            <constraint firstItem="R2p-uY-zsP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UNj-Io-x05"/>
                             <constraint firstItem="IIg-LY-ZUi" firstAttribute="top" secondItem="Y6g-7C-Q3e" secondAttribute="bottom" constant="17" id="WGq-gT-ENd"/>
+                            <constraint firstItem="R2p-uY-zsP" firstAttribute="top" secondItem="7gx-oD-9LO" secondAttribute="bottom" constant="27" id="WbE-hF-JS7"/>
                             <constraint firstAttribute="trailingMargin" secondItem="llv-0K-Ot1" secondAttribute="trailing" constant="250" id="Z11-LU-jJq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Jvh-F1-7D3" secondAttribute="trailing" id="ZCo-g3-sek"/>
                             <constraint firstAttribute="trailing" secondItem="t2w-fD-Ka6" secondAttribute="trailing" id="Zqa-MO-eXQ"/>
@@ -113,6 +127,11 @@
                             <constraint firstItem="OtE-dl-6VA" firstAttribute="top" secondItem="IIg-LY-ZUi" secondAttribute="bottom" constant="46" id="ubK-Ol-wTr"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="alterLabel" destination="R2p-uY-zsP" id="q5L-l4-7B9"/>
+                        <outlet property="passwordTextField" destination="7gx-oD-9LO" id="Jwc-jG-tuN"/>
+                        <outlet property="userTextField" destination="OtE-dl-6VA" id="IHw-xG-bnl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
