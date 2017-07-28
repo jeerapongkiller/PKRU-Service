@@ -140,7 +140,7 @@
                                         <barButtonItem key="leftBarButtonItem" image="ic_keyboard_arrow_left_2x.png" id="Td0-Ln-DBK">
                                             <color key="tintColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
                                             <connections>
-                                                <segue destination="BYZ-38-t0r" kind="show" id="NIM-lK-WXz"/>
+                                                <segue destination="BYZ-38-t0r" kind="show" identifier="BackHome" id="NIM-lK-WXz"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" image="ic_save_white_2x.png" id="gLp-MC-I0K">
@@ -220,24 +220,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TO1-H5-UnH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="710" y="123"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="VFw-9P-hLb">
-            <objects>
-                <viewController id="nfc-6J-gTU" customClass="ViewController" customModule="PKRU_Servie" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="qxG-r0-0RF"/>
-                        <viewControllerLayoutGuide type="bottom" id="Wst-lU-BsD"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="frL-3C-bY3" customClass="UIWebView">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6gp-xP-63r" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1508" y="123"/>
         </scene>
     </scenes>
     <resources>

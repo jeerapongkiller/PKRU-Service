@@ -97,7 +97,6 @@ class SingUpViewController: UIViewController {
                     
                     
                     print("upload OK")
-                    
                     }else{
                     
                     print("Cannot Upload TO Server")
@@ -119,6 +118,23 @@ class SingUpViewController: UIViewController {
         
     }   //UploadToSever
     
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+      
+        if segue.identifier == "BackHome"{
+        
+            if let destiantion = segue.description as? ViewController {
+                
+                destiantion.myString = (sender as? String)!
+                
+                
+            }//if2
+        
+        }//if1
+        
+        
+    }
     
     
     
